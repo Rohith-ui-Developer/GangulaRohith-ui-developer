@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+TRAVELLO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <style>
+        header{
+            position: sticky;
+            top: 0px;
+        }
+        .colorlib{
+            display: inline-block;
+            font-size: 40px;
+            color: white;
+            margin-left: 20px;
+        }
+        .travello{
+            display: inline-block;
+            background-color: black;
+            color: gray;
+            padding: 20px;
+            height: 57px;
+            width: 180px;
+            font-size: 20px;
+            text-align: center;
+            border-left: 1px solid gray;
+        }
+        button{
+            width: 60px;
+            height: 60px;
+        }
+        .background{
+           background-image: url(./images/beach.webp);
+           margin-top: -250px;
+        }
+        .shade{
+            background-color: rgba(0,0,0,0.6);
+            height: 120vh;
+        }
+        .top{
+            padding-top: 200px;
+        }
+        nav{
+           background-color: rgba(0,0,0,0.2);
+           height: 100px;
+           padding: 20px;
+           position: sticky;
+           top: 60px;
+        }
+        .nav-bar:hover{
+            text-decoration: underline;
+        }
+        .headline{
+            display: flex;
+            justify-content: space-around;
+            font-size: 80px;
+            font-weight: bold;
+            color: white;
+            margin-top: 100px;
+        }
+        .highlight{
+            text-align: right;
+            margin-right: 180px;
+            color: lightgray;
+        }
+        .highlight:hover{
+            text-decoration: underline;
+        }
+        .booking{
+            padding: 40px;
+            background-color: rgba(225,225,225,0.3);
+            height: 40vh;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: -50px;
+            border-radius: 15px;
+        }
+        input{
+            border: none;
+            background-color: lightgray;
+            height: 50px;
+            margin-top: 25px;
+        }
+        .blue-beach{
+            background-image: url(./images/testimonials.jpg.webp);
+            height: 75vh;
+            width: 100%;
+            margin-top: 10px;
+        }
+        ul{
+        list-style: none;
+        color:lightgray;
+        text-align: right;
+        margin-top: 10px;
+        margin-right:5px;
+       }
+       li:hover{
+        text-decoration: underline;
+       }
+       footer{
+        background-image: url(./images/travello-footer.webp);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+       }
+       a{
+        text-decoration: none;
+       }
+    </style>
+</head>
+<body class="container-fluid">
+    <header class="d-flex justify-content-between bg-dark" style="height: 60px;">
+        <div>
+            <span title="switcher" class="colorlib">colorlib <span class="text-success">.</span></span>
+            <span title="select a product" class="travello">+TRAVELLO</span>
+        </div>
+        
+    </header>
+    <nav class="d-flex justify-content-around mt-5">
+        <div class="fw-bold fs-2 text-light">
+            Travello
+        </div>
+        <div class="text-light fs-5">
+            <span class="nav-bar me-4">Home</span>
+            <span class="nav-bar me-4">About us</span>
+            <span class="nav-bar me-4">Search</span>
+            <span class="nav-bar me-4">News</span>
+            <span class="nav-bar">Contact</span>
+        </div>
+        <div class="fs-5 text-light">
+            call us: 00-56 445 678 33
+        </div>
+    </nav>
+    <section>
+        <div class="background">
+            <div class="shade">
+                <div class="top">
+                    <div>
+                        <span class="headline">Let us take your way</span>
+                    </div>
+                    <div class="highlight fs-5 mb-4">Offers 01</div>
+                    <div class="highlight fs-5 mb-4">Testimonials 02</div>
+                    <div class="highlight fs-5 mb-4">Latest 03</div>
+                    <div class="booking">
+                        <div class="d-flex align-items-center justify-content-center bg-light rounded rounded-3 p-2 fs-5" style="height:60px; width: 250px; margin-left: 450px; margin-top: 30px; margin-bottom: -5px">
+                            Search for your trip
+                        </div>
+                        <form class="d-flex justify-content-center  p-1 bg-light" style="height: 100px">
+                            <div>
+                                <input type="text" placeholder="city" class="me-4 p-3">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Departure" class="me-4 p-3" size="12">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Arrival" class="me-4 p-3" size="12">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Budget" class="me-4 p-3">
+                            </div>
+                            <div>
+                                <button class="btn btn-dark" style="width: 150px; margin-top: 25px; height: 50px">SEARCH</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="row" style="height: 300px; margin-top: 120px; margin-left: 150px;">
+                <div class="col d-flex">
+                    <div><img src="./images/beach-1.jpg" width="90px"></div>
+                    <div class="ms-4 mt-3"><b class="fs-5">Top Destinations</b><p class="text-secondary mt-1">Nulla pretium tincidunt felis,nec.</p></div>
+                </div>
+                <div class="col d-flex">
+                    <div><img src="./images/beach-2.jpg" width="90px"></div>
+                    <div class="ms-4 mt-3"><b class="fs-5">The Best Prices</b><p class="text-secondary mt-1">Sollictudin mauris lobortis in.</p></div>
+                </div>
+                <div class="col d-flex">
+                    <div><img src="./images/beach-3.jpg" width="90px"></div>
+                    <div class="ms-4 mt-3"><b class="fs-5">Amazing Services</b><p class="text-secondary mt-1">Nulla pretium tincidunt felis,nec.</p></div>
+                </div>
+                <div class="border border-1 mt-4" style="height: 1px; width: 95%;"></div>
+            </div>
+            <div class="d-flex justify-content-center text-secondary">
+                SIMPLY AMAZING PLACES
+            </div>
+            <div class="d-flex justify-content-center fs-1 fw-bold mt-4 fst-italic">
+                POPULAR DESTINATIONS
+            </div>
+            <div class="row mt-4">
+                <div class="col ">
+                    <div><img src="./images/bali.jpg"></div>
+                    <div class="fw-bold fs-4 mt-4">Bali</div>
+                    <div class="text-secondary">Nulla pretium tincidunt felis, nec.</div>
+                    <div class="fw-bold mt-2 fs-4">From $679</div>
+                </div>
+                <div class="col ">
+                    <div><img src="./images/indonesia.jpg"></div>
+                    <div class="fw-bold fs-4 mt-4">Bali</div>
+                    <div class="text-secondary">Nulla pretium tincidunt felis, nec.</div>
+                    <div class="fw-bold mt-2 fs-4">From $679</div>
+                </div>
+                <div class="col ">
+                    <div><img src="./images/san franciso.jpg"></div>
+                    <div class="fw-bold fs-4 mt-4">Bali</div>
+                    <div class="text-secondary">Nulla pretium tincidunt felis, nec.</div>
+                    <div class="fw-bold mt-2 fs-4">From $679</div>
+                </div>
+                <div class="col mt-4">
+                    <div><img src="./images/paris.jpg"></div>
+                    <div class="fw-bold fs-4 mt-4">Bali</div>
+                    <div class="text-secondary">Nulla pretium tincidunt felis, nec.</div>
+                    <div class="fw-bold mt-4 fs-4">From $679</div>
+                </div>
+                <div class="col mt-4">
+                    <div><img src="./images/phi phi island.jpg"></div>
+                    <div class="fw-bold fs-4 mt-4">Bali</div>
+                    <div class="text-secondary">Nulla pretium tincidunt felis, nec.</div>
+                    <div class="fw-bold mt-4 fs-4">From $679</div>
+                </div>
+                <div class="col mt-4">
+                    <div><img src="./images/mykonos.jpg"></div>
+                    <div class="fw-bold fs-4 mt-4">Bali</div>
+                    <div class="text-secondary">Nulla pretium tincidunt felis, nec.</div>
+                    <div class="fw-bold mt-4 fs-4">From $679</div>
+                </div>
+            </div>
+            <div class="blue-beach">
+                <div>
+                   <div class="d-flex text-light justify-content-center align-items-center" style="padding-top: 120px;">SIMPLE AMAZING PLACES</div>
+                </div>
+                <div class="text-light fs-1 fw-bold mt-4 d-flex justify-content-center align-items-center">Testimonials</div>
+                <div class="d-flex">
+                    <div class="text-light fs-2 fst-italic w-75" style="margin-left: 170px; margin-top: 80px; margin-right: -200px;"> 
+                        Lorem ipsum dolor sit amet, consecteture adipiscing elite. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.
+                    </div>
+                </div>
+                <div>
+                    <span class="d-block ms-4">
+                        <ul>
+                           <li class="mt-4"> City Breaks Clients01</li>
+                           <li class="mt-4"> Cruises Clients02</li>
+                           <li class="mt-4">All Inclusive Clients03</li>
+                        </ul>
+                     </span>
+                </div>
+                <div class="text-light fs-4 d-flex justify-content-center align-items-center" style="margin-top: 80px;">
+                    JOHN TURNER, <span class="fs-6">CLIENT</span>
+               </div>
+
+            </div>
+            <div class="row" style="height:100vh; margin-top: 150px; margin-left: 130px; margin-right: 130px;">
+                <div class="col-8">
+                    <div class="d-flex">
+                        <img src="./images/travello1.jpg" width="250px">
+                        <div class="ms-4">
+                            <span class="d-block fs-1 fw-bold mb-2">02<span class="fs-6 ms-1 fw-normal text-secondary">JUNE</span></span>
+                            <span class="d-block fs-4 fw-bold">Best tips to travel light</span>
+                            <span class="d-block text-secondary mb-3" style="font-size:12px ;">LIFESTYLE & TRAVEL</span>
+                            <span class="d-block text-secondary">Pellentesque sit amet elementum ccumsan sit amet mattis eget,</span>
+                            <span class="d-block text-secondary"> tristique at leo. Vivamus massa.Tempor massa et laoreet.</span>
+                        </div>
+                    </div>
+                    <div class=" d-flex mt-5">
+                        <img src="./images/travello2.jpg" width="250px">
+                        <div class="ms-4">
+                            <span class="d-block fs-1 fw-bold mb-2"> 01<span class="fs-6 fw-normal text-secondary">JUNE</span></span>
+                            <span class="d-block fs-4 fw-bold">Best tips to travel light</span>
+                            <span class="d-block text-secondary mb-3" style="font-size: 12px;">LIFESTYLE & TRAVEL</span>
+                            <span class="d-block text-secondary">Tempor massa et laoreet malesuada. Pellentesque sit amet</span>
+                            <span class="d-block text-secondary">elementum ccumsan sit amet mattis eget, tristique at leo.</span>
+                        </div>
+                    </div>
+                    <div class=" d-flex mt-5">
+                        <img src="./images/travello3.jpg" width="250px">
+                        <div class="ms-4">
+                            <span class="d-block fs-1 fw-bold mb-2"> 29<span class="fs-6 fw-normal text-secondary">MAY</span></span>
+                            <span class="d-block fs-4 fw-bold">Best tips to travel light</span>
+                            <span class="d-block text-secondary mb-3" style="font-size: 12px;">LIFESTYLE & TRAVEL</span>
+                            <span class="d-block text-secondary">Vivamus massa.Tempor massa et laoreet malesuada. Aliquam nulla</span>
+                            <span class="d-block text-secondary">nisl, accumsan sit amet mattis.</span>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+                <div class="col-4">
+                    <div>
+                        <img src="./images/travello4.jpg" width="100%" height="570px">
+                    </div>
+                </div>
+        </main>
+    </section>
+    <footer>
+        <div class="d-flex justify-content-center align-items-center text-light fs-1 fw-bold" style="padding-top: 100px;">subscribe to our newsletter to get the latest trends and news</div>
+        <div class="d-flex justify-content-center align-items-center text-light fs-5 ">join our database now</div>
+        <div>
+            <form >
+                <input type="text" name="name" placeholder="name" class="entry ms-4 p-4 fst-italic" size="40">
+                <input type="text" name="e-mail" placeholder="your e-mail" class="entry ms-4 p-4 fst-italic" size="70">
+                <button class="btn btn-secondary p-2 mt-1 ms-3" style="width: 180px; height: 53px; border-radius: 40px;">Subscribe</button>
+            </form>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <div>
+                <img src="./images/travello-flag.jpg" width="80px" class="mb-4">
+                <div class="text-light">
+                    <span class="d-block fs-4 fw-bold mb-3">GIVE US A CALL</span>
+                    <span class="d-block mb-2">Office Landline: +44 5567 32 664 567</span>
+                    <span class="d-block">Mobile: +44 5567 89 3322 332</span>
+                </div>
+            </div>
+            <div class="ms-5">
+                <img src="./images/travello-flag.jpg" width="80px" class="mb-4">
+                <div class="text-light">
+                    <span class="d-block fs-4 fw-bold mb-3">SEND US A MESSAGE</span>
+                    <span class="d-block mb-2">youremail@gmail.com</span>
+                    <span class="d-block">Office@yourbusinessname.com</span>
+                </div>
+            </div>
+            <div class="ms-5 me-5">
+                <img src="./images/travello-man.jpg" width="70px" class="mb-2">
+                <div class="text-light">
+                    <span class="d-block fs-4 fw-bold mb-3">COME & DROP BY</span>
+                    <span class="d-block mb-2">4124 Barnes Street, Sanford,</span>
+                    <span class="d-block ms-5">FL 32771</span>
+                </div>
+            </div>
+        </div>
+        <div class="text-secondary d-flex justify-content-center mt-5">
+            Copyright ©2023 All rights reserved | This template is made with <span class="bi bi-heart"></span> by <a href="https://www.colorlib.com">Colorlib</a>
+        </div>
+    </footer>
+</body>
+</html>
