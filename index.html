@@ -52,6 +52,28 @@
         }
         .service~span{
             display: inline-block;
+            
+        }
+        .footer-container{
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+        }
+        .service-title{
+            font-weight: bold;
+            font-size: 18px;
+            font-family: Arial;
+            margin-bottom: 20px;
+        }
+        .service-title~span,address span {
+            display: block;
+            margin-bottom: 15px;
+        }
+        .footer-brand{
+            font-size: 30px;
+            font-family: Arial;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
        
     </style>
@@ -88,20 +110,25 @@
     <a class="btn btn-outline-success" href="Public/travello-template.html">Travello Template</a>
     <a class="btn btn-primary" href="./netflix-design.html">Netflix</a>
     <footer>
-        <div class="add">
-            <span class="addr">Address</span>
-            <div class="service">
-            
-                <span class="bi bi-geo-alt">Hyderabad</span>
-                <span class="bi bi-telephone">9704912462</span>
+        <div class="footer-container">
+            <div>
+                <div class="footer-brand">Shopper.</div>
+                <aside>
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-linkedin"></span>
+                </aside>
             </div>
-
-        </div>
-        <div class="add">
-           <div class="service">
-            <span class="addr">Social Media Accounts</span>
-           </div>
-
+           
+            <div>
+                <div class="service-title">CONTACT</div>
+                <address>
+                    <span>1-202-555-0105</span>
+                    <span>1-202-555-0106</span>
+                    <span>help@shopper.com</span>
+                </address>
+            </div>
         </div>
 
     </footer>
