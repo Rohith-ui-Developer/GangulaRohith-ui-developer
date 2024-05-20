@@ -14,13 +14,11 @@
             font-weight: bold;
             padding: 5px;
             font-family: Arial;
-            position: sticky;
-            top: 10px;
+            justify-content: space-around;
             
         }
         section {
-            display: grid;
-            grid-template-columns: 3fr 9fr;
+            height: 100vh;
         }
         main {
             height: 900px;
@@ -47,33 +45,11 @@
             top: 0px;
         }
     </style>
-    <script>
-        function RecentClick(){
-            var loc = "";
-            switch(location.hash)
-            {
-                case "#home":
-                loc+= "home <br>";
-                break;
-                case "#contact":
-                loc+= "contact <br>";
-                break;
-                case "#about":
-                loc+= "About<br>";
-                break;
-                case "#project":
-                loc+= "Project <br>";
-                break;
-            }
-            document.getElementById("list").innerHTML +=loc;
-        }
-    </script>
+    
 </head>
 <body>
     <header>
-        <span></span> Portfolio
-    </header>
-    <section>
+        <span>Portfolio</span>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -81,9 +57,10 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#project">Projects</a></li>
             </ul>
-            <button onclick="RecentClick()">Recently Viewd</button>
-            <p id="list"></p>
         </nav>
+    </header>
+    <section>
+        
         <main>
             <h1 id="home">Home</h1>
             <p>We understand <span><b>25% OFF on </b><a href="#iphone">Iphone</a></span> that you may have questions about the Microsoft Services Agreement. We have an FAQ page (https://www.microsoft.com/en-us/servicesagreement/faq) that provides more information, including what Microsoft products and services it covers. Whenever we make changes, we provide a summary of the most notable changes to the current Microsoft Services Agreement. We will also continue to provide a summary of the changes to the previous version, and a link to the previous version, of the Microsoft Services Agreement on the Summary of Changes (https://www.microsoft.com/en-us/servicesagreement/updates) page.</p>
